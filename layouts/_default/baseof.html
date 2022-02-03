@@ -7,17 +7,5 @@
     {{- block "main" . }}{{- end }}
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}
-    <script type="text/javascript">
-  // Configure an instance for your database
-  var td = new Treasure({
-    host: 'in.treasuredata.com',
-    writeKey: '11736/c7b2a03c216d487debf038de7a845626d4689513',
-    database: 'js_sdk'
-  });
-  // Enable cross-domain tracking
-  td.set('$global', 'td_global_id', 'td_global_id');
-  // Track pageview information to 'pageviews' table
-  td.trackPageview('access_log');
-</script>
   </body>
 </html>
